@@ -1,3 +1,4 @@
+
 .right {
 	color: green;
 }
@@ -5,4 +6,93 @@
 .wrong {
 	color: red;
 
+}
+
+.image-size {
+	width: 200px;
+	height: 200px;
+}
+
+#scoreBoard {
+	background-color: black;
+    width: 125px;
+    height: 70px;
+	float: right;
+	display: block;
+	padding-top: 6px;
+	position: fixed;
+	left: 82%;
+	z-index: 100;
+
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  zindex: 1;
+  pointer-events: none;
+}
+
+#content {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 69%;
+  left: 19%;
+  margin-left: -250px;
+  margin-top: -150px;
+  color: silver;
+  font-family: verdana;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: inline-block;
+}
+
+
+#startButton {
+	margin-right: 4px;
+}
+
+#stopButton {
+	margin-left: 4px;
+
+}
+
+#submitButton {
+	position: fixed;
+	z-index: 1000;	
+    margin-left: -10px;
+
+}
+
+
+.party {
+	color: black;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    z-index: z-index: 99 !important;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
 }
